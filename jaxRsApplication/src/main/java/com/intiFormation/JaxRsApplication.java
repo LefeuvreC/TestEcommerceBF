@@ -8,8 +8,8 @@ public class JaxRsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JaxRsApplication.class, args);
-		
-		
 	}
+	
+	// test juste pour git
 
 }
