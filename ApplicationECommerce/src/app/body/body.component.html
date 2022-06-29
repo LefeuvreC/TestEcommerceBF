@@ -1,0 +1,11 @@
+<div *ngIf="utilisateur.role.idRole==1">
+    <ul>
+        <li><button (click)=gestionCategorie()> Gestion Categorie</button></li>
+        <li><button (click)=gestionProduit()> Gestion Produit</button></li>
+        <li><button (click)=gestionCommande()> Gestion Commande</button></li>
+    </ul>
+
+    <br>
+    <br>
+</div>
+<button (click)="deconnexion()"> Deconnexion </button>

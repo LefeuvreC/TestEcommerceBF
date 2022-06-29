@@ -1,0 +1,30 @@
+<html>
+
+
+<body>
+
+
+    <table>
+        <tr>
+            <td class="couleurFond">Nom Produit</td>
+            <td class="couleurFond">image</td>
+            <td class="couleurFond">quantite</td>
+            <td class="couleurFond">categorie</td>
+            <td class="couleurFond"></td>
+
+        </tr>
+
+        <tr *ngFor="let p of produits">
+
+            <td>{{p.libProduit}}</td>
+            <td><img src="http://localhost:9092{{p.img}}" width="100" height="60"></td>
+            <td>{{p.quantite}}</td>
+            <td>{{p.categorie.nomCategorie}}</td>
+            <td><button (click)="ajouterPanier(p.idProduit)"> Ajouter au panier </button></td>
+
+        </tr>
+    </table>
+    <button (click)="retour()"> Retour</button>
+</body>
+
+</html>

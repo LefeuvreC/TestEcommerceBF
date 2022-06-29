@@ -1,0 +1,12 @@
+<form (ngSubmit)="saveUtilisateur()">
+    Nom: <input type="text" name="nom" [(ngModel)]="utilisateur.nom" /><br>
+    Prenom: <input type="text" name="prenom" [(ngModel)]="utilisateur.prenom" /><br>
+    Login: <input type="text" name="username" [(ngModel)]="utilisateur.username" /><br>
+    Password: <input type="password" name="password" [(ngModel)]="utilisateur.password" /><br>
+
+    Date de Naissance : <input type="text" name="dateNaissance" [(ngModel)]="utilisateur.dateNaissance" /><br>
+
+    Email: <input type="text" name="email" [(ngModel)]="utilisateur.email" /><br>
+
+    <button> Valider </button>
+</form>

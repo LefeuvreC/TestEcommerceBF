@@ -1,0 +1,19 @@
+<h1> Vous etes dans la partie Gestion categorie</h1>
+
+<app-add-categorie (newItemEvent)="recupererApres($event)"></app-add-categorie>
+<br>
+<hr>
+<br>
+
+
+<p> Voici ci-dessous l'ensemble des catégories de la base de donnees </p><br>
+<app-gestion-categorie (newItemEvent)="recupererApres($event)" *ngFor="let c of categories" [categories]="c">
+</app-gestion-categorie>
+
+<br>
+<hr>
+<br>
+<button (click)="retour()"> RETOUR</button><br>
+<br>
+
+<button (click)="deconnexion()"> Deconnexion </button>

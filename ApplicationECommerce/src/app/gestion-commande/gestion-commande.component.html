@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+    <table>
+        <tr>
+            <td class="couleurFond">ID</td>
+            <td class="couleurFond">Date Commande</td>
+            <td class="couleurFond">Utilisateur</td>
+            <td class="couleurFond">Produits</td>
+
+        </tr>
+
+
+        <tr>
+            <td>{{commandes.idCommande}}</td>
+            <td>{{commandes.dateCommande}}</td>
+            <td>{{commandes.utilisateur.nom}} {{commandes.utilisateur.prenom}} id:{{commandes.utilisateur.id}}</td>
+            <button (click)="afficherProduit(commandes.idCommande)"> Afficher </button>
+        </tr>
+
+
+
+
+    </table>
+
+</body>
+
+</html>

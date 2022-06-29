@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <table>
+        <tr>
+            <td class="couleurFond">lib Produit</td>
+            <td class="couleurFond">image</td>
+            <td class="couleurFond">quantite</td>
+        </tr>
+        <tr>
+            <td>{{produit.libProduit}}</td>
+            <td><img src="http://localhost:9092{{produit.img}}" width="100" height="60"></td>
+            <td>{{produit.quantite}}</td>
+        </tr>
+    </table>
+    <button (click)="retour()"> Retour</button>
+</body>
+
+</html>

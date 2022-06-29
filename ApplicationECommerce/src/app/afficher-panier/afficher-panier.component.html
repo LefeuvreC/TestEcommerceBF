@@ -1,0 +1,24 @@
+<p>Voici votre panier</p>
+
+
+<table>
+    <tr>
+        <td> idLignePanier</td>
+        <td> Nom Produit</td>
+        <td> image </td>
+        <td> quantite</td>
+        <td> Action 1</td>
+    </tr>
+    <tr *ngFor="let p of lignePanier">
+        <td> {{p.idLignePanier}}</td>
+        <td> {{p.produit.libProduit}}</td>
+        <td> <img src="http://localhost:9092{{p.produit.img}}" width="100" height="60"> </td>
+        <td> {{p.quantite}}</td>
+        <td><button (click)="supprimer(p.idLignePanier)"> Supprimer </button></td>
+
+    </tr>
+
+
+</table>
+
+<td><button (click)="Valider()"> Valider le panier </button></td>

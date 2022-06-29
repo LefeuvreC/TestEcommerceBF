@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+    <table>
+        <tr>
+            <td class="couleurFond">ID</td>
+            <td class="couleurFond">Nom Categorie</td>
+            <td class="couleurFond">Description</td>
+            <td class="couleurFond">Action 1</td>
+            <td class="couleurFond">Action 2</td>
+            <td class="couleurFond">Action 3</td>
+
+        </tr>
+
+
+        <tr>
+            <td>{{categories.idCategorie}}</td>
+            <td>{{categories.nomCategorie}}</td>
+            <td>{{categories.description}}</td>
+            <td><button (click)="supprimer(categories.idCategorie)"> Supprimer </button></td>
+            <td><button (click)="modifier(categories.idCategorie)"> Modifier </button></td>
+            <td><button (click)="afficher(categories.idCategorie)"> Afficher Produits </button></td>
+
+
+
+
+        </tr>
+
+
+
+
+    </table>
+
+</body>
+
+</html>

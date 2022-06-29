@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+
+</head>
+
+
+<body>
+
+
+    <table>
+        <tr>
+
+            <td class="couleurFond">Nom Categorie</td>
+            <td class="couleurFond">Description</td>
+            <td class="couleurFond">Action 1</td>
+
+        </tr>
+
+
+        <tr *ngFor="let c of categories">
+
+            <td>{{c.nomCategorie}}</td>
+            <td>{{c.description}}</td>
+            <td><button (click)="afficher(c.idCategorie)"> Afficher Produits </button></td>
+
+        </tr>
+    </table>
+
+    <button (click)="retour()"> Retour</button>
+
+</body>
+
+</html>

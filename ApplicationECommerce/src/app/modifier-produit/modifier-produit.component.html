@@ -1,0 +1,14 @@
+<form (ngSubmit)="modifierProduit()">
+
+    Categorie : <select name="selectedCat" [(ngModel)]="selectedCat">
+        <option *ngFor="let cat of categories" [ngValue]="cat"> {{cat.nomCategorie}}</option>
+    </select>
+
+    Nom Produit : <input type="text" name="libProduit" [(ngModel)]="produit.libProduit" /><br>
+
+    image : <input type="file" name="fileInput" id="fileInput" (change)="selectedEvent($event)" /><br>
+
+    quantite : <input type="text" name="quantite" [(ngModel)]="produit.quantite" /><br>
+
+    <button> Valider </button>
+</form>

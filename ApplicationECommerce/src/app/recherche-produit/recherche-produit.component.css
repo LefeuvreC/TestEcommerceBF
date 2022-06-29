@@ -1,0 +1,20 @@
+table {
+    width: 1000px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgb(245, 240, 235);
+    caption-side: bottom;
+    table-layout: fixed;
+}
+
+td {
+    border: 1px solid rgb(120, 120, 125);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.couleurFond {
+    background-color: rgb(124, 119, 115);
+}

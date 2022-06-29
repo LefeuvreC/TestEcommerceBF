@@ -1,0 +1,18 @@
+<div>
+    <h1> Connexion </h1>
+    <div>
+        <p *ngIf='invalidLogin'>{{errorMessage}}</p>
+
+        login : <input type="text" name="username" [(ngModel)]="username"><br>
+        password : <input type="password" name="password" [(ngModel)]="password"><br>
+
+        <button (click)=login()> Valider </button>
+    </div>
+    <button (click)=inscription()> inscription </button>
+</div>
+
+
+
+<br>
+<hr>
+<br>

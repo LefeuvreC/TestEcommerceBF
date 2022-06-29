@@ -1,0 +1,15 @@
+<h1> Vous etes dans la partie Gestion Commande</h1>
+
+
+
+<p> Voici ci-dessous l'ensemble des catégories de la base de donnees </p><br>
+<app-gestion-commande *ngFor="let c of commandes" [commandes]="c">
+</app-gestion-commande>
+
+<br>
+<hr>
+<br>
+<button (click)="retour()"> RETOUR</button><br>
+<br>
+
+<button (click)="deconnexion()"> Deconnexion </button>

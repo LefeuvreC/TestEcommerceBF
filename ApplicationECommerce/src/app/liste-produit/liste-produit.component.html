@@ -1,0 +1,18 @@
+<h1> Vous etes dans la partie Gestion produit</h1>
+
+<app-add-produit (newItemEvent)="recupererApres($event)"></app-add-produit>
+
+<br>
+<hr>
+<br>
+<p> Voici ci-dessous l'ensemble des produits de la base de donnees </p><br>
+
+<app-gestion-produit (newItemEvent)="recupererApres($event)" *ngFor="let p of produits" [produits]="p">
+</app-gestion-produit>
+<br>
+<hr>
+<br>
+<button (click)="retour()"> RETOUR</button><br>
+<br>
+
+<button (click)="deconnexion()"> Deconnexion </button>
