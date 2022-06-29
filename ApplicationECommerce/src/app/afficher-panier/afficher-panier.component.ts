@@ -4,6 +4,7 @@ import { Commande } from '../models/Commande.model';
 import { LigneCommande } from '../models/LigneCommande.model';
 import { LignePanier } from '../models/LignePanier.model';
 import { Panier } from '../models/Panier.model';
+import { Produit } from '../models/Produit.model';
 import { Utilisateur } from '../models/Utilisateur.model';
 import { CommandeService } from '../service/commande.service';
 import { LigneCommandeService } from '../service/ligne-commande.service';
@@ -24,6 +25,8 @@ export class AfficherPanierComponent implements OnInit {
   ligneCommande!: LigneCommande
 
   selectedCom!: Commande
+
+  produit!: Produit
 
   constructor(private serviceC: CommandeService, private servicelC: LigneCommandeService, private router: Router) { }
 

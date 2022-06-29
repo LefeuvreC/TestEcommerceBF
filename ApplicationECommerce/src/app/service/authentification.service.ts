@@ -18,6 +18,9 @@ export class AuthentificationService {
   deconnecter() {
     sessionStorage.removeItem('token')
     sessionStorage.removeItem('utilisateur')
+    sessionStorage.removeItem('panier')
+    sessionStorage.removeItem('cpt')
+
     this.router.navigateByUrl('Authentification')
   }
 }
